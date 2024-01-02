@@ -8,7 +8,7 @@ Include the date you created this project and README file.
 Post your Work on GitHub
 
 ### Description
-Describe what your project is about and what it does
+The project is learning about version control. The bikeshare project is about analysing bike share data
 
 ### Files used
 Include the files used
