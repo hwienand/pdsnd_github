@@ -11,7 +11,9 @@ Post your Work on GitHub
 The project is learning about version control. The bikeshare project is about analysing bike share data
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
