@@ -30,23 +30,23 @@ def load_data():
 
 def get_filters(city):
     """
-    Asks user to specify a city, month, and day to analyze.
+    asks user to specify a city, month, and day to analyze.
 
-    Returns:
+    returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    filter_question = input('Would you like to filter the data set? Yes or No? ').lower()
+    filter_question = input('would you like to filter the data set? yes or no? ').lower()
     while filter_question != 'yes' and filter_question != 'no':
         print('invalid input')
-        filter_question = input('Would you like to filter the data set? Yes or No? ').lower()
+        filter_question = input('would you like to filter the data set? yes or no? ').lower()
 
     if filter_question == 'yes':
-        # TO DO: get user input for month (all, january, february, ... , june)
-        month = input('Which month would you like to look at? All, Jan, Feb, Mar, Apr, May or Jun?').lower()
+        # to do: get user input for month (all, january, february, ... , june)
+        month = input('which month would you like to look at? all, jan, feb, mar, apr, may or jun?').lower()
         while month !='all' and month !='jan' and month !='feb' and month !='mar' and month !='apr' and month !='may' and month !='jun':
-            print('That was not a valid input')
+            print('that was not a valid input')
             month = input('Which month would you like to look at? All, Jan, Feb, Mar, Apr, May or Jun?').lower()
         #print(month)
 
