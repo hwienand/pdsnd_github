@@ -37,12 +37,12 @@ def get_filters(city):
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    filter_q = input('Would you like to filter the data set? Yes or No? ').lower()
-    while filter_q != 'yes' and filter_q != 'no':
+    filter_question = input('Would you like to filter the data set? Yes or No? ').lower()
+    while filter_question != 'yes' and filter_question != 'no':
         print('invalid input')
-        filter_q = input('Would you like to filter the data set? Yes or No? ').lower()
+        filter_question = input('Would you like to filter the data set? Yes or No? ').lower()
 
-    if filter_q == 'yes':
+    if filter_question == 'yes':
         # TO DO: get user input for month (all, january, february, ... , june)
         month = input('Which month would you like to look at? All, Jan, Feb, Mar, Apr, May or Jun?').lower()
         while month !='all' and month !='jan' and month !='feb' and month !='mar' and month !='apr' and month !='may' and month !='jun':
@@ -57,7 +57,7 @@ def get_filters(city):
             day = input('For which day of the week would you like to view data? All, Mon, Tue, Wed, Thu, Fri, Sat, Sun?').lower()  
         #print(day)
 
-    elif filter_q == 'no':
+    elif filter_question == 'no':
         month = 'all'
         day = 'all'
         raw_data_q = input('Would you like to see the raw data or calculate the statistics for the raw table? Answer \'raw table\' or \'stats\'').lower()
